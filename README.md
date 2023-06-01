@@ -2,9 +2,11 @@
 FoodScrapDropOffSite is a web application that leverages NYC Open Data to facilitate the recycling of food scraps in New York City. This platform allows residents to easily locate designated drop-off sites and responsibly dispose of their food scraps, promoting composting and reducing landfill waste.
 
 ## Features
-- Interactive Map: The web application utilizes Mapbox to provide an interactive map interface where users can visualize and explore the various food scrap drop-off locations across New York City.
+- Interactive Map: 
+  The web application utilizes Mapbox to provide an interactive map interface where users can visualize and explore the various food scrap drop-off locations across New York City.
 
-- Detailed Information: Users can easily navigate and explore drop-off locations by selecting a borough from a dropdown menu, dividing New York City into six categories: Bronx,  Brooklyn,Manhattan, Queens,  Staten Island, and York City(show all) . Each borough is represented by a marker on the map, and when users hover over a marker, detailed information about the drop-off location is displayed. Each drop-off location marker on the map provides essential details such as operating hours, accepted materials, and any specific instructions or guidelines to ensure proper disposal.
+- Detailed Information: 
+  Detailed Information: Explore drop-off locations by selecting a borough from the dropdown menu, dividing NYC into Bronx, Brooklyn, Manhattan, Queens, Staten Island, and City-wide. Each marker on the map displays crucial details like operating hours, accepted materials, and disposal instructions for a seamless composting experience.
 
 ## Technologies Used
 
