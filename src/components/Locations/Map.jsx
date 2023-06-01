@@ -60,13 +60,13 @@ const Map = ({ data }) => {
             }}
           >
             <div className="popUp p-2">
-              <p>{hoveredLocation.ntaname}</p>
-              <p>{hoveredLocation.borough}</p>
-              <p>{hoveredLocation.food_scrap_drop_off_site}</p>
-              <p>{hoveredLocation.open_months}</p>
-              <p>{hoveredLocation.notes}</p>
-              <p>{hoveredLocation.hosted_by}</p>
-              <p>{hoveredLocation.operation_day_hours}</p>
+              <p className="font-semibold">Ntaname: {hoveredLocation.ntaname}</p>
+              <p className="font-semibold">Borough: {hoveredLocation.borough}</p>
+              <p className="font-semibold">Site:{hoveredLocation.food_scrap_drop_off_site}</p>
+              <p className="font-semibold">{hoveredLocation.open_months}</p>
+              <p className="font-semibold">Notes: {hoveredLocation.notes}</p>
+              <p className="font-semibold">Hosted by: {hoveredLocation.hosted_by}</p>
+              <p className="font-semibold">Hours: {hoveredLocation.operation_day_hours}</p>
             </div>
           </Popup>
         ) : null}

@@ -1,4 +1,6 @@
 import React from 'react'
+import barGraph from '../../assets/imgs/barGraph.png'
+import lineGraph from '../../assets/imgs/lineGraph.png'
 
 const Contents = () => {
 
@@ -42,10 +44,16 @@ const Contents = () => {
 
       <div className="my-10">
         <h1 className="font-semibold text-lg my-2">Jupyter Notebook Analysis:</h1>
-        <p className="w-full font-light lg:w-2/3">We have conducted interesting data analysis using Jupyter Notebook. 
-      You can find the details of our analysis on the GitHub page: 
-      <a className="text-blue-500 hover:text-blue-700" href="#"> GitHub Repository.</a>
-     </p>
+
+        <div className='w-full d flex flex-wrap'>
+          <img src={barGraph} alt="dataset_barGraph" style={{ maxWidth: '400px' }} />
+          <img src={lineGraph} alt="dataset_lineGraph" style={{ maxWidth: '400px' }} />
+        </div>
+        <p className="w-full font-light lg:w-2/3">
+          We have conducted interesting data analysis using Jupyter Notebook. 
+          You can find the details of our analysis on the GitHub page: 
+          <a className="text-blue-500 hover:text-blue-700" href="#"> GitHub Repository.</a>
+        </p>
       </div>
  </div>
   )

@@ -5,12 +5,11 @@ const TeamSection = () => {
   const teamMembers = [
     {
       name: "Gabriela Guayara",
-      major: "Computer Information System",
+      major: "Computer Science",
       image: 'https://placehold.jp/300x352.png',
       github: "https://github.com/johndoe",
       linkedin: "https://linkedin.com/in/johndoe",
       twitter: "https://twitter.com/johndoe",
-      facebook: "https://facebook.com/johndoe",
     },
     {
       name: "Hongjie Zhang",
@@ -19,16 +18,14 @@ const TeamSection = () => {
       github: "https://github.com/janesmith",
       linkedin: "https://linkedin.com/in/janesmith",
       twitter: "https://twitter.com/janesmith",
-      facebook: "https://facebook.com/janesmith",
     },
     {
       name: "Mamuna Chaudhry",
-      major: "Computer Information System",
+      major: "Computer Science",
       image: 'https://placehold.jp/300x352.png',
       github: "https://github.com/bobjohnson",
       linkedin: "https://linkedin.com/in/bobjohnson",
       twitter: "https://twitter.com/bobjohnson",
-      facebook: "https://facebook.com/bobjohnson",
     },
   ];
 
@@ -39,7 +36,6 @@ const TeamSection = () => {
       <span className="text-[#DA4C31] text-3xl font-semibold">MEET THE TEAM</span>
       <span className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-black"></span>
     </div>
-
       <div className="w-full flex justify-between memberCard">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2  xl:grid-cols-3 w-full">
           {teamMembers.map((member, index) => (
@@ -91,16 +87,6 @@ const TeamSection = () => {
                         className="text-gray-600 hover:text-gray-800"
                       >
                         <FaTwitter size={20} />
-                      </a>
-                    )}
-                    {member.facebook && (
-                      <a
-                        href={member.facebook}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-600 hover:text-gray-800"
-                      >
-                        <FaFacebook size={20} />
                       </a>
                     )}
                   </div>
