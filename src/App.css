@@ -26,7 +26,9 @@ body {
   border-radius: 50%;
   animation: spinner 1.5s linear infinite;
 }
-
+.memberImage {
+  max-height: 199px;
+}
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
@@ -69,6 +71,9 @@ button {
 /* break point */
 /* 1455px */
 
+.textWrap {
+  min-width: 250px;
+}
 @media (max-width: 1314px) {
   .heroImage  {
     width: 400px !important;

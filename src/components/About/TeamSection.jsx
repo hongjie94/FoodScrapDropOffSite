@@ -1,31 +1,34 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaRegEnvelope } from "react-icons/fa";
 import member2Img from "../../assets/imgs/teamMembers/member2.png";
+import member3Img from "../../assets/imgs/teamMembers/member1Img.jpg";
+import member1Img from "../../assets/imgs/teamMembers/member1.jpg";
+
 const TeamSection = () => {
   const teamMembers = [
     {
       name: "Gabriela Guayara",
       major: "Computer Science",
-      image: 'https://placehold.jp/300x352.png',
-      github: "https://github.com/johndoe",
-      linkedin: "https://linkedin.com/in/johndoe",
-      twitter: "https://twitter.com/johndoe",
+      image: member1Img,
+      github: "#",
+      linkedin: "#",
+      email: "gabrielaguayara@gmail.com",
     },
     {
       name: "Hongjie Zhang",
       major: "Computer Information System",
       image: member2Img,
-      github: "https://github.com/janesmith",
-      linkedin: "https://linkedin.com/in/janesmith",
-      twitter: "https://twitter.com/janesmith",
+      github: "https://github.com/hongjie94",
+      linkedin: "https://www.linkedin.com/in/hongjiez",
+      email: "https://hong.zhang94@gmail.com",
     },
     {
       name: "Mamuna Chaudhry",
       major: "Computer Science",
-      image: 'https://placehold.jp/300x352.png',
-      github: "https://github.com/bobjohnson",
-      linkedin: "https://linkedin.com/in/bobjohnson",
-      twitter: "https://twitter.com/bobjohnson",
+      image: member3Img,
+      github: "#",
+      linkedin: "#",
+      email: "mamunachaudhry9@gmail.com",
     },
   ];
 
@@ -46,12 +49,12 @@ const TeamSection = () => {
               <div className="md:flex">
                 <div className="md:flex-shrink-0 ">
                   <img
-                    className="h-50 w-full object-cover md:h-full md:w-48 rounded-tl-xl rounded-bl-xl"
+                    className="memberImage h-50 w-full object-cover md:h-full md:w-48 rounded-tl-xl rounded-bl-xl"
                     src={member.image}
                     alt={member.name}
                   />
                 </div>
-                <div className="p-8 flex flex-col justify-between">
+                <div className="textWrap p-8 flex flex-col justify-between">
                   <div>
                   <div className="font-semibold">{member.name}</div>
                     <div className="text-gray-500 text-xs">
@@ -59,6 +62,18 @@ const TeamSection = () => {
                     </div>
                   </div>
                   <div className="flex justify-end space-x-2 pt-3">
+
+                  {member.email && (
+                      <a
+                        href={member.email}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:text-gray-800"
+                      >
+                        <FaRegEnvelope size={20} />
+                      </a>
+                    )}
+
                     {member.github && (
                       <a
                         href={member.github}
@@ -79,16 +94,7 @@ const TeamSection = () => {
                         <FaLinkedin size={20} />
                       </a>
                     )}
-                    {member.twitter && (
-                      <a
-                        href={member.twitter}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-600 hover:text-gray-800"
-                      >
-                        <FaTwitter size={20} />
-                      </a>
-                    )}
+                  
                   </div>
                 </div>
               </div>

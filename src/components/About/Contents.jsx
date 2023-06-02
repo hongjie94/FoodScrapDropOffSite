@@ -1,6 +1,7 @@
 import React from 'react'
 import barGraph from '../../assets/imgs/barGraph.png'
 import lineGraph from '../../assets/imgs/lineGraph.png'
+import barGraph2 from '../../assets/imgs/barGraph2.png'
 
 const Contents = () => {
 
@@ -46,13 +47,13 @@ const Contents = () => {
         <h1 className="font-semibold text-lg my-2">Jupyter Notebook Analysis:</h1>
 
         <div className='w-full d flex flex-wrap'>
-          <img src={barGraph} alt="dataset_barGraph" style={{ maxWidth: '400px' }} />
+          <img src={barGraph2} alt="dataset_barGraph" style={{ maxWidth: '400px' }} />
           <img src={lineGraph} alt="dataset_lineGraph" style={{ maxWidth: '400px' }} />
         </div>
         <p className="w-full font-light lg:w-2/3">
           We have conducted interesting data analysis using Jupyter Notebook. 
-          You can find the details of our analysis on the GitHub page: 
-          <a className="text-blue-500 hover:text-blue-700" href="#"> GitHub Repository.</a>
+          You can find the details of our analysis on  
+          <a className="text-blue-500 hover:text-blue-700" href="https://colab.research.google.com/drive/1VE-5wSxyZkSfSXvZT4sHEXY0PG-RDW01#revisionId=0B27U0jhB0CnjNCtETUR4cDRwL0lwSWVSWjk2VFNHNWp2dTFjPQ"> Food Scrap Drop-Off.ipynb</a>
         </p>
       </div>
  </div>

@@ -5,17 +5,15 @@ import axios from "axios";
 
 const Locations = () => {
   const [data, setData] = useState(null);
-  const [currentBorough, setBorough] = useState("All");
+  const [currentBorough, setBorough] = useState("All Borough");
   const borough = [
-    "All",
+    "All Borough",
     "Bronx",
     "Brooklyn",
     "Manhattan",
     "Queens",
     "Staten Island",
   ];
-
-  // submit inputs pass to url
 
   const fetchData = (url) => {
     axios
@@ -37,7 +35,7 @@ const Locations = () => {
     const selectedBorough = event.target.value;
     setBorough(selectedBorough);
     let url;
-    if (selectedBorough != "All") {
+    if (selectedBorough != "All Borough") {
       url = `https://data.cityofnewyork.us/resource/if26-z6xq.json?borough=${selectedBorough}`;
     } else {
       url = "https://data.cityofnewyork.us/resource/if26-z6xq.json";
