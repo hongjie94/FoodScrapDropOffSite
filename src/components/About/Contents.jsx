@@ -2,7 +2,7 @@ import React from 'react'
 import barGraph from '../../assets/imgs/barGraph.png'
 import lineGraph from '../../assets/imgs/lineGraph.png'
 import barGraph2 from '../../assets/imgs/barGraph2.png'
-
+import nycDataLogo from '../../assets/imgs/nycOpenData.svg'
 const Contents = () => {
 
   const datasets = [
@@ -36,6 +36,7 @@ const Contents = () => {
   
   return (
     <div className='my-10'>
+      <img className="lg:w-2/3" src={nycDataLogo} alt="" />
      {datasets.map((dataset, index) => (
       <div key={index} className="my-10">
         <h1 className="font-semibold text-lg my-2">{dataset.title}</h1>
