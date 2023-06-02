@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaRegEnvelope } from "react-icons/fa";
 import member2Img from "../../assets/imgs/teamMembers/member2.png";
-import member3Img from "../../assets/imgs/teamMembers/member1Img.jpg";
+import member3Img from "../../assets/imgs/teamMembers/member3.jpg";
 import member1Img from "../../assets/imgs/teamMembers/member1.jpg";
 
 const TeamSection = () => {
@@ -20,7 +20,7 @@ const TeamSection = () => {
       image: member2Img,
       github: "https://github.com/hongjie94",
       linkedin: "https://www.linkedin.com/in/hongjiez",
-      email: "https://hong.zhang94@gmail.com",
+      email: "hong.zhang94@gmail.com",
     },
     {
       name: "Mamuna Chaudhry",
@@ -65,7 +65,7 @@ const TeamSection = () => {
 
                   {member.email && (
                       <a
-                        href={member.email}
+                        href= {`mailto:${member.email}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 hover:text-gray-800"
